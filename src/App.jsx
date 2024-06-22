@@ -13,6 +13,11 @@ import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import OnChangeComponent from "./OnChangeComponent";
+import ColorPicker from "./ColorPicker";
+import UpdaterFunction from "./UpdaterFunction";
+import UpdateObject from "./UpdateObject";
+import UpdateArrayState from "./UpdateArrayState";
+import ArrayOfObjectUpdate from "./ArrayOfObjectUpdate";
 
 const App = () => {
   // Userlist and map
@@ -93,6 +98,28 @@ const App = () => {
   ];
   return (
     <>
+      <h1>Update Array of Object On State</h1>
+      <ArrayOfObjectUpdate />
+      <hr />
+
+      <h1>Update Array On State</h1>
+      <UpdateArrayState />
+      <hr />
+
+      <h1>Update Object On State</h1>
+      <UpdateObject />
+      <hr />
+
+      <h1>Updater Function</h1>
+      <UpdaterFunction />
+
+      <hr />
+
+      <h1>Color Picker</h1>
+      <ColorPicker />
+
+      <hr />
+
       <h1>OnChange Event</h1>
       <OnChangeComponent />
 
