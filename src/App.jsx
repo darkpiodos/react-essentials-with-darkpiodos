@@ -12,6 +12,7 @@ import ButtonOnClick from "./ButtonOnClick";
 import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
+import OnChangeComponent from "./OnChangeComponent";
 
 const App = () => {
   // Userlist and map
@@ -92,6 +93,10 @@ const App = () => {
   ];
   return (
     <>
+      <h1>OnChange Event</h1>
+      <OnChangeComponent />
+
+      <hr />
       <h1>COUNTER JSX useState() React Hooks</h1>
       <Counter />
 
