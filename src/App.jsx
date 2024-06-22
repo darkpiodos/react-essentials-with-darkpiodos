@@ -10,6 +10,8 @@ import UserList from "./UserList";
 import JobList from "./JobList";
 import ButtonOnClick from "./ButtonOnClick";
 import ProfilePicture from "./ProfilePicture";
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 const App = () => {
   // Userlist and map
@@ -90,6 +92,14 @@ const App = () => {
   ];
   return (
     <>
+      <h1>COUNTER JSX useState() React Hooks</h1>
+      <Counter />
+
+      <hr />
+
+      <h1>useState() React Hooks</h1>
+      <MyComponent />
+
       <h1>OnClick Event</h1>
       <ProfilePicture />
 
