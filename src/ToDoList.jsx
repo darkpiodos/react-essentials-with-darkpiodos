@@ -11,7 +11,12 @@ const ToDoList = () => {
   function handleInputChange(event) {
     setNewTask(event.target.value);
   }
-  function addTask() {}
+  function addTask() {
+    if (newTask.trim() !== "") {
+      setTasks((t) => [...t, newTask]);
+      setNewTask("");
+    }
+  }
   function deleteTask(index) {}
   function moveTaskUp(index) {}
   function moveTaskDown(index) {}
@@ -20,29 +25,35 @@ const ToDoList = () => {
       <h1>To-Do-List</h1>
       <div>
         <input
+          className="to-do-input"
           type="text"
           placeholder="Enter new task ..."
           value={newTask}
           onChange={handleInputChange}
         />
-        <button onChange={addTask}>Add Task</button>{" "}
+        <button className="todo-button add-button" onClick={addTask}>
+          Add Task
+        </button>
       </div>
       <ol>
         {tasks.map((task, index) => (
           <li key={index}>
             <span>{task}</span>
-            <button onClick={() => deleteTask(index)} className="delete-button">
+            <button
+              onClick={() => deleteTask(index)}
+              className="delete-button todo-button"
+            >
               Delete
             </button>
             <button
               onClick={() => moveTaskUp(index)}
-              className="move-up-button"
+              className="move-up-button todo-button"
             >
               Move Up
             </button>
             <button
               onClick={() => moveTaskDown(index)}
-              className="move-down-button"
+              className="move-down-button todo-button"
             >
               MoveDown
             </button>
