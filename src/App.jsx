@@ -21,6 +21,11 @@ import ArrayOfObjectUpdate from "./ArrayOfObjectUpdate";
 import ToDoList from "./ToDoList";
 import AppUseEffect from "./AppUseEffect";
 import UseEffectWindowWidthHeight from "./UseEffectWindowWidthHeight";
+import AppDigitalClock from "./AppDigitalClock";
+import ComponentA from "./Components/ComponentA";
+import PracticeUseContext from "./Components/PracticeUseContext";
+import AppUseRef from "./AppUseRef";
+import Stopwatch from "./Stopwatch";
 
 const App = () => {
   // Userlist and map
@@ -101,6 +106,26 @@ const App = () => {
   ];
   return (
     <>
+      <div className="stopwatch-container">
+        <h1> STOPWATCH</h1>
+        <Stopwatch />
+      </div>
+      <h1> Learn useRef() Hook in React</h1>
+      <AppUseRef />
+      <hr />
+
+      <h1> Practice | Learn useContext() Hook in React</h1>
+      <PracticeUseContext />
+      <hr />
+
+      <h1> Components | Learn useContext() Hook in React</h1>
+      <ComponentA />
+      <hr />
+
+      <h1> Digital Clock | Learn UseEffect Hook in React</h1>
+      <AppDigitalClock />
+      <hr />
+
       <h1>Window Width & Height | Learn UseEffect Hook in React</h1>
       <UseEffectWindowWidthHeight />
       <hr />

@@ -247,3 +247,133 @@ input[type="color"] {
   font-size: 1.4rem;
   margin-left: 10px;
 }
+
+.body {
+  background-image: url(assets/dardevcall.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  height: 500px;
+}
+.clock-container {
+  backdrop-filter: blur(5px);
+  margin: 4rem;
+}
+.clock {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.76);
+  text-align: center;
+}
+.component-box {
+  border: 3px solid black;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.ref-container-buttonInput {
+  background-color: rgb(218, 218, 218);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.ref-container-buttonInput input,
+.ref-container-buttonInput button {
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ref-container-buttonInput button {
+  border: none;
+  font-weight: bold;
+  background-color: rgb(247, 4, 65);
+  color: white;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+.ref-container-buttonInput button:hover {
+  background-color: rgb(219, 29, 77);
+  transform: scale(1.02);
+}
+
+.stopwatch-container {
+  background-color: rgb(18, 1, 31);
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.stopwatch-container h1 {
+  font-size: 7rem;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: white;
+  padding: 30px;
+}
+
+.display {
+  color: black;
+}
+
+.start-button {
+  background-color: yellowgreen;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin: 5px;
+  cursor: pointer;
+}
+.start-button:hover {
+  background-color: rgb(149, 214, 19);
+}
+
+.stop-button {
+  background-color: rgb(236, 30, 58);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.stop-button:hover {
+  background-color: rgb(255, 27, 57);
+}
+
+.reset-button {
+  background-color: rgb(0, 183, 255);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: rgb(61, 200, 255);
+}
