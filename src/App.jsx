@@ -18,6 +18,7 @@ import UpdaterFunction from "./UpdaterFunction";
 import UpdateObject from "./UpdateObject";
 import UpdateArrayState from "./UpdateArrayState";
 import ArrayOfObjectUpdate from "./ArrayOfObjectUpdate";
+import ToDoList from "./ToDoList";
 
 const App = () => {
   // Userlist and map
@@ -98,6 +99,9 @@ const App = () => {
   ];
   return (
     <>
+      <h1>To Do List App</h1>
+      <ToDoList />
+      <hr />
       <h1>Update Array of Object On State</h1>
       <ArrayOfObjectUpdate />
       <hr />
