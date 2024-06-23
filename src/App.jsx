@@ -19,6 +19,8 @@ import UpdateObject from "./UpdateObject";
 import UpdateArrayState from "./UpdateArrayState";
 import ArrayOfObjectUpdate from "./ArrayOfObjectUpdate";
 import ToDoList from "./ToDoList";
+import AppUseEffect from "./AppUseEffect";
+import UseEffectWindowWidthHeight from "./UseEffectWindowWidthHeight";
 
 const App = () => {
   // Userlist and map
@@ -99,6 +101,14 @@ const App = () => {
   ];
   return (
     <>
+      <h1>Window Width & Height | Learn UseEffect Hook in React</h1>
+      <UseEffectWindowWidthHeight />
+      <hr />
+
+      <h1>Learn UseEffect Hook in React</h1>
+      <AppUseEffect />
+      <hr />
+
       <h1>To Do List App</h1>
       <ToDoList />
       <hr />
